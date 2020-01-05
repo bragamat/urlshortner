@@ -8,3 +8,5 @@
   <%= submit "Reduzir" %>
   </div>
 <% end %>
+
+<p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

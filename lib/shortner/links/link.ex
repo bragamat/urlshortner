@@ -1,4 +1,4 @@
-defmodule Shortner.Links.Links do
+defmodule Shortner.Links.Link do
   use Ecto.Schema
   import Ecto.Changeset
 
