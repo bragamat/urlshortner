@@ -1,0 +1,10 @@
+<h1>Reduzir urls</h1>
+
+<%= form_for @changeset, Routes.url_path(@conn, :create), fn f -> %>
+  <div class="container">
+    <%= text_input f, :url, placeholder: "Cole a url que deseja shornted" %>
+    <%= error_tag f, :url %>
+  
+  <%= submit "Reduzir" %>
+  </div>
+<% end %>
