@@ -3,6 +3,6 @@ defmodule ShortnerWeb.PageController do
 
   def index(conn, _params) do
     conn
-    |> redirect(to: url_path(conn, :index))
+    |> redirect(to: Routes.url_path(conn, :index))
   end
 end
