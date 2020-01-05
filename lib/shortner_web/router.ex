@@ -16,11 +16,11 @@ defmodule ShortnerWeb.Router do
   scope "/", ShortnerWeb do
     pipe_through :browser
 
-    # get "/", PageController, :index
+    get "/", PageController, :index
     # get "/urls", LinkController, :index
-    get "/", UrlController, :index
+    get "/urls", UrlController, :index
     get "/:url", UrlController, :show
-    post "/url", UrlController, :create
+    post "/urls", UrlController, :create
   end
 
   # Other scopes may use custom stacks.
