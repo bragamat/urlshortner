@@ -16,5 +16,6 @@ config :shortner, ShortnerWeb.Endpoint,
 config :shortner, Shortner.Repo,
   username: "postgres",
   password: "postgres",
-  database: "shortner_prod",
+  database: "postgresql-angular-06761",
+  queue_target: 5000,
   pool_size: 10
