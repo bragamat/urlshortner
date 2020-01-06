@@ -16,4 +16,4 @@ config :shortner, Shortner.Repo,
   username: "postgres",
   password: "postgres",
   database: "shortner_prod",
-  pool_size: 18
+  pool_size: 10
